@@ -1,0 +1,270 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap'); */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F29A2E;
+    font-family: Oswald;
+}
+
+/* header {
+    height: 500px;
+} */
+
+.logo__link {
+    display: flex;
+    justify-content: center;
+    }
+
+/* .logo {
+    width: 16em;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+} 
+
+.menu__item {
+    list-style-type: none;
+}
+
+.menu__link  {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.menu__link:hover {
+    color: white;
+    text-shadow: 2px 2px 5px;
+    transition: all 0.25s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+.articulo {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.articulo_imagen {
+    width: 30em;
+    
+}
+
+.articulo_parrafo {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    width: 20em;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.articulo_video {
+    width: 30em;
+    height: 25em;
+}
+
+.logofooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logofooter img {
+    width: 8rem;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    list-style-type: none;
+}
+
+.footer {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_footer:hover {
+    color: white;
+    text-shadow: 2px 2px 5px;
+    transition: all 0.25s;
+}
+
+.menu_footer {
+    letter-spacing: 2px;
+    color: black;
+}
+
+.articulomenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo_titulo {
+    font-size: 38px;
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.articulo_imagenmenu {
+    width: 300px;
+    height: 300px;
+    padding: 2%;
+}
+
+.articulo_parrafomenu {
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    height: 300px;
+    padding: 2%;
+    margin-top: 12%;
+    
+}
+
+.sectionmenu {
+    margin: 1em;
+}
+h1 {
+    margin-top: 2%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_menu {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    color: #fff;
+    margin: 2px 1px;
+    color: black;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+form div {
+    padding: 5px;
+}
+
+.email {
+    width: 100%;
+}
+    
+
+input[type=submit], [type=reset], [type=button] {
+    background-color: #401839;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type=text], [type=email] {
+    padding: 12px;
+    width: 400px;
+    font-size: 30px;
+}
+
+textarea {
+    width: 400px;
+    font-size: 20px;
+}
+
+select {
+    padding: 12px;
+    width: 200px;
+    font-size: 20px;
+}
+
+input[type=radio] {
+    padding: 10px;
+    width: 50px;
+}
+
+.manword {
+    font-size: 30px;
+}
+
+.womanword {
+    font-size: 30px;
+}
+
+table {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 420px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 42px;
+    border: 3px solid;
+}
+
+th {
+    border: 3px solid;
+}
+
+td {
+    border: 3px solid;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
