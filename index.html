@@ -4,81 +4,87 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./img/favicon.png">
-	<link rel="stylesheet" href="./css/estilos.css">
-	<title>MMMburguesas</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<script src="./bootstrap/js/jquery.slim.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="./css/estilos3.css">
+	<title>TUTTITA</title>
 </head>
 <body>
+	<!-- Wrapper --> 
 	<div id="wrapper">
+		<!-- Header -->
        <header>
-	        <div>
-	             <a class="logo_link" href="./index.html"> <img class="logo" src="./img/logo2-removebg-preview.png"></a>
-            </div>
-	        <nav>
-				<div>
-		            <ul class="menu">
-			            <li><a class="menu_link" href="./pages/menu.html">Menu</a></li>
-			            <li><a class="menu_link" href="./pages/Locales.html">Locales</a></li>
-			            <li><a class="menu_link" href="./pages/promociones.html">Promociones</a></li>
-			            <li><a class="menu_link" href="./pages/contacto.html">Contacto</a></li>
-			            <li><a class="menu_link" href="#my_footer">Sobre Nosotros</a></li>
-		            </ul>
-				</div>	
-	        </nav>
+		<div class="container-fluid">
+			<div class="row m-1">
+	            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+	                 <a class="logo_link" href="./index.html"> <img class="logo" src="./img/logo2-removebg-preview.png"></a>
+                </div>
+			    <div class="d-flex justify-content-end col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+	                <nav>
+				        <ul class="menu mt-5 ml-5">
+			                <li><a class="menu_link" href="./pages/menu.html">Menu</a></li>
+			                <li><a class="menu_link" href="./pages/Locales.html">Locales</a></li>
+			                <li><a class="menu_link" href="./pages/promociones.html">Promociones</a></li>
+			                <li><a class="menu_link" href="./pages/contacto.html">Contacto</a></li>
+			            </ul>
+					</nav>
+		        </div>
+		    </div>
+		</div>
         </header>
+		<!-- Hamburguesa de Fondo -->
 	    <section id="HamburguesaFondo">
 			<div class="hamburguer1920">
 				<img src="./img/fondo1920x1080.png" alt="Hamburguesa de Fondo">
 			</div>
-			<!-- <div class="hamburguer1280">
-				<img src="./img/fondo1280x720.png" alt="Hamburguesa de Fondo">
-			</div> -->
-			
 		</section>
+		<!-- Disfruta estas delicias -->
 		<section id="Cartel">
-			<div>
+			<div class="container-fluid d-flex justify-content-center">
 				<img src="./img/inkpx-word-art.png" alt="Cartel">
 			</div>
 		</section>
+		<!-- Hamburguesas -->
 		<section id="burguershow">
-			<div class="hamburguers">
-			    <div class="burguer_image">
+			<div class="hamburguers container-fluid d-flex justify-content-around flex-row flex-wrap">
+			    <div class="burguer_image col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 d-flex flex-column align-items-center">
 				    <img src="./img/ClasicaSimple-removebg-preview.png" alt="Hamburguesa Clasica">
 				    <h2>La Clásica de Siempre</h2>
 				    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat deleniti minima molestiae dolorum inventore sunt tenetur aspernatur ipsam, fugiat sequi quam illum corrupti totam explicabo velit aliquid ut distinctio.</p>
 			    </div>
-			    <div class="burguer_image">
+			    <div class="burguer_image col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 d-flex flex-column align-items-center">
 				    <img src="./img/BaconFull-removebg-preview.png" alt="Hamburguesa con Bacon">
 				    <h2>Xtreme Bacon</h2>
 				    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat deleniti minima molestiae dolorum inventore sunt tenetur aspernatur ipsam, fugiat sequi quam illum corrupti totam explicabo velit aliquid ut distinctio.</p>
 			    </div>
-			    <div class="burguer_image">
+			    <div class="burguer_image col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 d-flex flex-column align-items-center">
 				    <img src="./img/FullCheddar-removebg-preview.png" alt="Hamburguesa con Cheddar">
 				    <h2>Tower of Cheese</h2>
 				    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat deleniti minima molestiae dolorum inventore sunt tenetur aspernatur ipsam, fugiat sequi quam illum corrupti totam explicabo velit aliquid ut distinctio.</p>
 			    </div>
-			    <div class="burguer_image">
+			    <div class="burguer_image col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 d-flex flex-column align-items-center">
 				    <img src="./img/simple_doble-removebg-preview.png" alt="Hamburguesa con Cheddar">
 				    <h2>La Clásica pero DOBLE</h2>
 				    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat deleniti minima molestiae dolorum inventore sunt tenetur aspernatur ipsam, fugiat sequi quam illum corrupti totam explicabo velit aliquid ut distinctio.</p>
 			    </div>
 		    </div>
-
 		</section>
+		<!-- My Footer -->
 		<footer id="myfooter">
-			<div class="footerdad">
-				<div class="logowithsocials">
+			<div class="footerdad container d-flex justify-content-around mt-5">
+				<div class="logofooter col-md-5 col-lg-5 col-xl-5">
 					<img src="./img/logo2-removebg-preview.png" alt="logo">
 				</div>	
-				<div class="workwithus">
+				<div class="workwithus col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 align-items-center">
 					<h2>¡TRABAJA EN TUTTITA!</h2>
 					<p>¿Querés ser parte del Staff?<br />
 					   Envianos tu CV</p>
-					   <br>
-					   <br>
+					   
 					<a class="trabaja" href="mailto:tuttirodriguez@gmail.com">TRABAJÁ CON NOSOTROS</a>   
 				</div>
 			</div>
-			    <div class="Socialsc">
+			    <div class="Socialsc d-flex justify-content-around m-5">
 				    <div>
 					    <a href="#"></a>
 					    <img src="./img/facebookicono-removebg-preview.png" alt="icono de facebook">
@@ -92,8 +98,7 @@
 					    <img src="./img/Whatssap-removebg-preview.png" alt="icono de Whatssap">
 				    </div>
 			    </div>
-			
 		</footer>
-		
-		
-    </div>
+	</div>
+</body>
+</html>
