@@ -37,7 +37,6 @@ header {
 
 .logo {
     width: 6.25em;
-    margin-left: 2em;
 }
 
 li, a {
@@ -48,23 +47,12 @@ li, a {
     font-size: 1.5em;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 2em;
-}
 
 a:hover {
+    text-decoration: none;
     color: #F29A2E;
     text-shadow: 1px 1px 2px;
     transition: all 0.25s;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #HamburguesaFondo {
@@ -147,18 +135,20 @@ p {
     width: 3em;
 }
 
-@media screen and (min-width:0px) and (max-width:768px) {
+@media screen and (min-width:0px) and (max-width:360px) {
     .hamburguers {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
         margin-bottom: 3em;
-        margin: 0 30em 10em 30em;
+        margin: 0 20em 10em 20em;
     }
 
     .burguer_image img {
         width: 30em;
         
     }
+
+    
 }

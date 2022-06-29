@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100vh;
-    box-sizing: border-box;
+html {
+    border: 5px solid blue;
+}
+body {
     font-family: Oswald;
     background-color: #F29A2E;
+    border: 5px solid red;
 }
 
 #wrapper {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "imagenfondo"
-    "cartel"
-    "burgas"
-    "footer";
+    grid-template-areas:
+        "header"
+        "imagenfondo"
+        "cartel"
+        "burgas"
+        "footer";
     grid-template-rows: auto;
     width: 100%;
-    height: 100vh;    
+    height: 100vh;
 }
 
 header {
@@ -34,10 +36,11 @@ header {
 }
 
 .logo {
-    width: 6.25em; 
+    width: 6.25em;
 }
 
-li, a {
+li,
+a {
     list-style-type: none;
     text-decoration: none;
     margin: 0 0.5em;
@@ -70,7 +73,7 @@ section#Cartel {
 
 section#burguershow {
     grid-area: burgas;
-}    
+}
 
 .burguer_image img {
     width: 19em;
@@ -92,12 +95,12 @@ p {
     background-image: url(../img/tramaHeader.png);
     background-color: black;
     color: #fff;
-    }
+}
 
 .trabaja {
-        border: 2px solid #F29A2E;
-        padding: 10px;
-        background-color: black;
+    border: 2px solid #F29A2E;
+    padding: 10px;
+    background-color: black;
 }
 
 .Socialsc img {
@@ -152,31 +155,44 @@ input[type="button"] {
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
-    li, a {
+
+    li,
+    a {
         font-size: 1.4em;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-    li, a {
+
+    li,
+    a {
         font-size: 1.3em;
     }
 }
 
-@media screen and (min-width:576px) and (max-width:767px) {
-    li, a {
-        font-size: 1.2em;
+@media screen and (min-width:481px) and (max-width:767px) {
+
+    li,
+    a {
+        font-size: 1em;
     }
-    
+
     .logofooter {
         visibility: hidden;
     }
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
+@media only screen and (max-width: 480px) {
 
-    li, a {
-        font-size: 1em;
+    .logo {
+        width: 5em;
+        height: auto;
+        margin-top: 3em;
+    }
+    .menu {
+        display:inline-block;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .burguer_image img {
