@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    border: 5px solid blue;
+}
+body {
+    font-family: Oswald;
+    background-color: #F29A2E;
+    border: 5px solid red;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "imagenfondo"
+        "cartel"
+        "burgas"
+        "footer";
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-image: url(../img/tramaHeader.png);
+    background-repeat: repeat;
+    background-color: black;
+}
+
+.logo {
+    width: 6.25em;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 0.5em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F29A2E;
+    text-shadow: 1px 1px 2px;
+    transition: all 0.25s;
+}
+
+#HamburguesaFondo {
+    grid-area: imagenfondo;
+}
+
+.hamburguer1920 img {
+    width: 100%;
+}
+
+section#Cartel {
+    grid-area: cartel;
+}
+
+section#burguershow {
+    grid-area: burgas;
+}
+
+.burguer_image img {
+    width: 19em;
+    opacity: 0.6;
+}
+
+.burguer_image img:hover {
+    opacity: 1;
+    transform: scale(1.10);
+    transition: all 1s;
+}
+
+p {
+    padding: 1em;
+}
+
+#myfooter {
+    grid-area: footer;
+    background-image: url(../img/tramaHeader.png);
+    background-color: black;
+    color: #fff;
+}
+
+.trabaja {
+    border: 2px solid #F29A2E;
+    padding: 10px;
+    background-color: black;
+}
+
+.Socialsc img {
+    width: 3em;
+}
+
+/* CONTACTO */
+
+input[type="text"] {
+    font-size: 2em;
+    width: 15em;
+}
+
+input[type="email"] {
+    font-size: 2em;
+    width: 15em;
+}
+
+select {
+    font-size: 2em;
+    width: 9em;
+}
+
+label {
+    font-size: 2em;
+    padding: 0.1em 0.1em;
+    margin: 0.2em 0.5em;
+}
+
+input[type="radio"] {
+    width: 1.15em;
+    height: 1.15em;
+}
+
+textarea {
+    font-size: 1.5em;
+}
+
+input[type="submit"] {
+    margin: 1em;
+    padding: 0.5em 1em;
+}
+
+input[type="reset"] {
+    margin: 1em;
+    padding: 0.5em 1em;
+}
+
+input[type="button"] {
+    margin: 1em;
+    padding: 0.5em 1em;
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    li,
+    a {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    li,
+    a {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px) {
+
+    li,
+    a {
+        font-size: 1em;
+    }
+
+    .logofooter {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .logo {
+        width: 5em;
+        height: auto;
+        margin-top: 3em;
+    }
+    .menu {
+        display:inline-block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .burguer_image img {
+        width: 75%;
+    }
+
+    .logofooter {
+        visibility: hidden;
+    }
+}
