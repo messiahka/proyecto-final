@@ -6,200 +6,192 @@
     box-sizing: border-box;
 }
 
-html {
-    border: 5px solid blue;
-}
+html,
 body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
     font-family: Oswald;
     background-color: #F29A2E;
-    border: 5px solid red;
+    
 }
-
-#wrapper {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "imagenfondo"
-        "cartel"
-        "burgas"
-        "footer";
-    grid-template-rows: auto;
-    width: 100%;
-    height: 100vh;
-}
-
+ 
 header {
-    grid-area: header;
+    display: flex;
+    justify-content: space-between;
     background-image: url(../img/tramaHeader.png);
     background-repeat: repeat;
     background-color: black;
+    top: 0;
+    margin-top: 0;
 }
 
 .logo {
-    width: 6.25em;
+    width: 5em;
 }
 
 li,
 a {
     list-style-type: none;
     text-decoration: none;
-    margin: 0 0.5em;
+    margin: 0 1em;
     color: white;
     font-size: 1.5em;
 }
 
-.menu {
-    display: flex;
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
-a:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
     text-decoration: none;
     color: #F29A2E;
     text-shadow: 1px 1px 2px;
     transition: all 0.25s;
 }
 
-#HamburguesaFondo {
-    grid-area: imagenfondo;
+#formulario {
+    display: flex;
+    justify-content: center;
 }
 
-.hamburguer1920 img {
-    width: 100%;
+#formulario h2 {
+    font-size: 3em;
+    padding: 0.5em;
 }
 
-section#Cartel {
-    grid-area: cartel;
+.boxform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section#burguershow {
-    grid-area: burgas;
+
+input[type=text], input[type=email] {
+    width: 15em;
+    font-size: 2em;
+    border: 2px solid black;
+    margin: 0.1em 0;
 }
 
-.burguer_image img {
-    width: 19em;
-    opacity: 0.6;
+.sex {
+    font-size: 1.5em;
 }
 
-.burguer_image img:hover {
-    opacity: 1;
-    transform: scale(1.10);
-    transition: all 1s;
+textarea {
+    width: 30em;
+    height: 10em;
+    border: 2px solid black;
 }
 
-p {
-    padding: 1em;
+input[type=submit], input[type=reset] {
+    border-radius: 10px;
+    padding: 0.5em;
 }
 
-#myfooter {
-    grid-area: footer;
+footer {
     background-image: url(../img/tramaHeader.png);
+    background-repeat: repeat;
     background-color: black;
-    color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+}
+
+.footerdad {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.1em; 
+}
+
+.workwithus h2, p {
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .trabaja {
     border: 2px solid #F29A2E;
-    padding: 10px;
+    padding: 0.9px;
     background-color: black;
+}
+
+.Socialsc {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
 }
 
 .Socialsc img {
     width: 3em;
 }
 
-/* CONTACTO */
 
-input[type="text"] {
-    font-size: 2em;
-    width: 15em;
-}
-
-input[type="email"] {
-    font-size: 2em;
-    width: 15em;
-}
-
-select {
-    font-size: 2em;
-    width: 9em;
-}
-
-label {
-    font-size: 2em;
-    padding: 0.1em 0.1em;
-    margin: 0.2em 0.5em;
-}
-
-input[type="radio"] {
-    width: 1.15em;
-    height: 1.15em;
-}
-
-textarea {
-    font-size: 1.5em;
-}
-
-input[type="submit"] {
-    margin: 1em;
-    padding: 0.5em 1em;
-}
-
-input[type="reset"] {
-    margin: 1em;
-    padding: 0.5em 1em;
-}
-
-input[type="button"] {
-    margin: 1em;
-    padding: 0.5em 1em;
-}
 
 @media screen and (min-width:992px) and (max-width:1199px) {
-
-    li,
-    a {
-        font-size: 1.4em;
+    
+    header {
+        font-size: 0.5em;
     }
+    
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-
-    li,
-    a {
-        font-size: 1.3em;
+    
+    header {
+        font-size: 0.5em;
     }
+
+    
 }
 
-@media screen and (min-width:481px) and (max-width:767px) {
-
-    li,
-    a {
-        font-size: 1em;
-    }
-
-    .logofooter {
+@media screen and (min-width:576px) and (max-width:767px) {
+    
+    .logo {
+        width: 5%;
         visibility: hidden;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (min-width:361px) and (max-width:575px) {
 
     .logo {
-        width: 5em;
-        height: auto;
-        margin-top: 3em;
-    }
-    .menu {
-        display:inline-block;
-        margin-right: auto;
-        margin-left: auto;
+        width: 5%;
+        visibility: hidden;
     }
 
-    .burguer_image img {
+    .logowithsocials img {
         width: 75%;
     }
 
-    .logofooter {
+    .trabaja {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:360px) {
+
+    body {
+        font-size: 0.6rem;
+    }
+
+    .logo {
+        width: 5%;
         visibility: hidden;
     }
+
+    .logowithsocials img {
+        width: 60%;
+    }
+    
+    .workwithus a {
+        font-size: 1em;
+    }
+    p {
+        visibility: hidden;
+    }
+
 }
