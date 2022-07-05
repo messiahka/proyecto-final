@@ -60,7 +60,6 @@ a {
 .navbar-dark .navbar-nav .nav-link:hover {
     text-decoration: none;
     color: #F29A2E;
-    text-shadow: 1px 1px 2px;
     transition: all 0.25s;
 }
 
@@ -135,15 +134,17 @@ p {
 
 .trabaja {
     border: 2px solid #F29A2E;
-    padding: 0.9em;
+    padding: 0.5em;
     background-color: black;
 }
 
-.Socialsc {
-    display: flex;
-    justify-content: space-around;
-    margin: 1em;
+.trabaja:hover {
+    text-decoration: none;
+    color: #F29A2E;
+    transition: all 0.25s;
 }
+
+
 
 .Socialsc img {
     width: 3em;
@@ -201,6 +202,10 @@ p {
 
     .burguer_image {
         width: 20em;
+    }
+
+    .logowithsocials img {
+        width: 75%;
     }
 
     .trabaja {
