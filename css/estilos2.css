@@ -6,39 +6,43 @@
     box-sizing: border-box;
 }
 
-html,
+html { 
+    font-size: 62.5%;
+
+}
 body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     font-family: Oswald;
     background-color: #F29A2E;
-    
 }
  
 header {
-    display: flex;
-    justify-content: space-between;
     background-image: url(../img/tramaHeader.png);
     background-repeat: repeat;
     background-color: black;
-    top: 0;
-    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo {
-    width: 5em;
+.menu_item {
+    display: flex;
 }
+
+
 
 li,
 a {
     list-style-type: none;
     text-decoration: none;
-    margin: 0 1em;
+    margin: 0 1.5rem;
     color: white;
-    font-size: 1.5em;
+    font-size: 2.8rem;
 }
 
+.logo_header img {
+    width: 15rem;
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
@@ -53,6 +57,7 @@ a {
 #formulario {
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 #formulario h2 {
@@ -95,6 +100,11 @@ h1 {
     margin: 1em;
     color: black;
     text-decoration: underline;
+    font-size: 4rem;
+}
+
+#oferta {
+    font-size: 2rem;
 }
 
 .hamburguers_menu {
@@ -102,6 +112,7 @@ h1 {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 1.5rem;
     margin-bottom: 1.5em;
 
 }
@@ -267,6 +278,10 @@ footer {
 
 @media screen and (min-width:768px) and (max-width:991px) {
     
+    .logo_header img {
+        width: 10rem;
+    }
+
     header {
         font-size: 0.5em;
     }
@@ -276,16 +291,16 @@ footer {
 
 @media screen and (min-width:576px) and (max-width:767px) {
     
-    .logo {
-        width: 5%;
+    .logo_header img {
+        width: 10rem;
         visibility: hidden;
     }
 }
 
 @media screen and (min-width:361px) and (max-width:575px) {
 
-    .logo {
-        width: 5%;
+    .logo_header img {
+        width: 10rem;
         visibility: hidden;
     }
 
@@ -321,12 +336,12 @@ footer {
 
 @media screen and (min-width:0px) and (max-width:360px) {
 
-    body {
+    /* body {
         font-size: 0.6rem;
-    }
+    } */
 
-    .logo {
-        width: 5%;
+    .logo_header img {
+        width: 5rem;
         visibility: hidden;
     }
 
